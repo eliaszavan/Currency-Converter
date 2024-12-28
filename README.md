@@ -1,4 +1,5 @@
 # Conversor de Moedas
 
-* CNY -> BRL
-* USD -> BRL
+* BRL -> USD (Dólar Americano);
+* BRL -> CNY (Yuan Chinês);
+* BRL -> EUR (Euro);
