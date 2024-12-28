@@ -121,3 +121,10 @@ p {
 .div-select option:checked {
     background-color: var(--lightgray);
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+      height: 100%;
+      width: 100%;
+    }
+}
