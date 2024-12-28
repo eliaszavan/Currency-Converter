@@ -3,7 +3,7 @@
 <link>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor de Moedas</title>
+    <title>Conversor BRL</title>
     <link rel="stylesheet" href="css/style.css"></link>
 </head>
 <body>
@@ -11,13 +11,22 @@
             <h1 class="title">Conversor</h1>
             <form>
                 <div class="input-container">
-                    <p>Quantia</p>
+                    <p>Quantia R$</p>
                     <input type="number" class="amount" placeholder="BRL">
+
+                    <p>Moeda</p>
+                    <div class="div-select">
+                        <select class="currency-selector">
+                            <option value="USD" selected="selected">USD - Dólar Americano</option>
+                            <option value="CNY">CNY - Yuan Chinês</option>
+                            <option value="EUR">EUR - Euro</option>
+                         </select>
+                    </div>   
                 </div>
                 <button>Converter</button>
     
-                <p>Resultado em USD:</p>
-                <div class="result">$0</div>
+                <p class="title-result">Resultado</p>
+                <div class="result">0.00</div>
             </form>
         </div>
     

@@ -7,15 +7,20 @@
 body {
     --black: #040403;
     --white: #FDFFFC;
+    --lightgray: #cacacaee;
     --gray: #cacacacc;
+    --gray2: #aaaaaa;
     --red: #A93F55;
     --darkgreen: #007016;
     --darkgreen2: #00811a;
 
     font-family: 'Arial', sans-serif;
-    background-color: var(--black);    
+    background-color: var(--black);
 }
-h1, a, p {
+
+h1,
+a,
+p {
     color: var(--black);
     text-decoration: none;
 }
@@ -23,6 +28,7 @@ h1, a, p {
 h1 {
     font-size: 48px;
 }
+
 .title {
     font-weight: bold;
     padding: 16px;
@@ -40,6 +46,7 @@ body {
     background-color: var(--white);
     border-radius: 8px;
     box-shadow: 0 0 5px var(--white);
+    height: 480px;
     padding: 20px;
 }
 
@@ -47,7 +54,8 @@ form {
     margin-top: 16px;
 }
 
-input, button {
+input,
+button {
     width: 100%;
     border: none;
     border-radius: 8px;
@@ -55,8 +63,8 @@ input, button {
 }
 
 input {
-    border: 1px solid #aaaaaa;
-    height: 50px;
+    border: 1px solid var(--gray2);
+    height: 48px;
     padding: 0 15px;
 }
 
@@ -77,6 +85,7 @@ button:hover {
 
 p {
     margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .result {
@@ -85,4 +94,30 @@ p {
     align-items: center;
     height: 42px;
     background-color: var(--gray);
+}
+
+.div-select {
+    width: 100%;
+    /* Tamanho final do select */
+    overflow: hidden;
+    /* Esconde o conteúdo que passar do tamanho especificado */
+}
+
+.currency-selector {
+    cursor: pointer;
+}
+
+.div-select select {
+    border: none;
+    border: 1px solid var(--gray2);
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    padding: 13px 20px 13px 12px;
+    color: var(--black);
+    text-indent: 0.01px;
+}
+
+.div-select option:checked {
+    background-color: var(--lightgray);
 }
