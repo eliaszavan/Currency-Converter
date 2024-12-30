@@ -1,18 +1,17 @@
 # Conversor de Moedas
 
-* BRL -> USD (Dólar Americano);
-* BRL -> CNY (Yuan Chinês);
-* BRL -> EUR (Euro);
+* Um simples conversor de moedas simples com 4 cotações disponíveis.
+* Moedas: BRL (Real Brasileiro), CNY (Yuan Chinês), EUR (Euro), USD (Dólar Americano).
 
 -----------------------------------------------
 
 # Imagens
 
-* USD
-![USD](https://github.com/user-attachments/assets/9d23d5f4-9f97-45ef-8206-5a763b0be7cc)
+1.
+![1](https://github.com/user-attachments/assets/5c0e7267-3e13-4db3-9c80-eaf139c0a8f9)
 
-* CNY
-![CNY](https://github.com/user-attachments/assets/44f09fcb-11dd-4d09-b099-4be42a6ee769)
+2.
+![2](https://github.com/user-attachments/assets/1b87142c-7d21-4bd8-859d-373b8c9336b7)
 
-* EUR
-![EUR](https://github.com/user-attachments/assets/7f569a60-ed8a-48bc-bd21-00c3f52ea1a5)
+3.
+![3](https://github.com/user-attachments/assets/c84040fe-3d46-482c-8269-24c848f9d1ee)
