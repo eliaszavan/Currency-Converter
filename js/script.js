@@ -16,7 +16,7 @@ let fromCurrency = fromSelector.options[fromSelector.selectedIndex].value;
 let toCurrency = toSelector.options[toSelector.selectedIndex].value;
 let currencySymbol = getCurrencySymbol(toCurrency);
 setText(`${currencySymbol}0.00`);
-p.textContent = `Resultado em ${toCurrency}:`;
+p.textContent = `Result in ${toCurrency}:`;
 
 // Atualiza o resultado quando os selects mudam
 [fromSelector, toSelector].forEach(selector => {
@@ -25,7 +25,7 @@ p.textContent = `Resultado em ${toCurrency}:`;
         toCurrency = toSelector.options[toSelector.selectedIndex].value;
         currencySymbol = getCurrencySymbol(toCurrency);
         setText(`${currencySymbol}0.00`);
-        p.textContent = `Resultado em ${toCurrency}:`;
+        p.textContent = `Result in ${toCurrency}:`;
     });
 });
 
@@ -46,7 +46,7 @@ async function convert() {
         // URL da API com a moeda de origem
         const response = await fetch(`https://api.exchangerate-api.com/v4/latest/${fromCurrency}`);
         if (!response.ok) {
-            throw new Error("Erro ao obter a taxa de câmbio.");
+            throw new Error("Error getting exchange rate.");
         }
 
         const data = await response.json();
@@ -54,14 +54,14 @@ async function convert() {
         // Obtém a taxa de câmbio para a moeda de destino
         const rate = data.rates[toCurrency];
         if (!rate) {
-            setText("Moeda selecionada inválida.");
+            setText("Invalid selected currency.");
             return;
         }
 
         // Converte o valor inserido
         const amountValue = parseFloat(amount.value);
         if (isNaN(amountValue)) {
-            setText("Por favor, insira um valor válido.");
+            setText("Please enter a valid value.");
             return;
         }
 
@@ -72,7 +72,7 @@ async function convert() {
         result.textContent = `${currencySymbol}${convertedAmount.toFixed(2)}`;
     } catch (error) {
         console.error(error);
-        setText("Erro ao realizar a conversão. Tente novamente mais tarde.");
+        setText("Error performing conversion.");
     }
 }
 

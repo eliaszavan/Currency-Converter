@@ -3,7 +3,7 @@
 <link>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversor BRL</title>
+    <title>Currency Converter</title>
     <link rel="stylesheet" href="css/style.css"></link>
     <link rel="icon" href="img/website_icon.png" type="image/png">
     
@@ -11,34 +11,34 @@
 <body>
         <div class="container">
             <div class="container-content">
-                <h1 class="title">Conversor</h1>
+                <h1 class="title">Converter</h1>
                 <form>
                     <div class="input-container">
-                        <p>Quantia</p>
-                        <input type="number" class="amount" placeholder="Insira um valor numérico">
+                        <p>Amount</p>
+                        <input type="number" inputmode="decimal" class="amount" placeholder="Enter a numeric value">
     
-                        <p>De:</p>
+                        <p>From:</p>
                         <div class="div-select">
                             <select class="currency-selector" id="from">
-                                <option value="USD">USD - Dólar Americano</option>
-                                <option value="CNY">CNY - Yuan Chinês</option>
+                                <option value="USD" selected="selected">USD - US Dollar</option>
+                                <option value="CNY">CNY - Chinese Yuan</option>
                                 <option value="EUR">EUR - Euro</option>
-                                <option value="BRL" selected="selected">BRL - Real Brasileiro</option>
+                                <option value="BRL">BRL - Brazilian Real</option>
                              </select>
                         </div>  
-                        <p>Para:</p>
+                        <p>To:</p>
                         <div class="div-select">
                             <select class="currency-selector" id="to">
-                                <option value="USD" selected="selected">USD - Dólar Americano</option>
-                                <option value="CNY">CNY - Yuan Chinês</option>
+                                <option value="USD">USD - US Dollar</option>
+                                <option value="CNY">CNY - Chinese Yuan</option>
                                 <option value="EUR">EUR - Euro</option>
-                                <option value="BRL">BRL - Real Brasileiro</option>
+                                <option value="BRL" selected="selected">BRL - Brazilian Real</option>
                              </select>
                         </div>    
                     </div>
-                    <button>Converter</button>
+                    <button>Convert</button>
         
-                    <p class="title-result">Resultado</p>
+                    <p class="title-result">Result</p>
                     <div class="result">0.00</div>
                 </form>
             </div>
