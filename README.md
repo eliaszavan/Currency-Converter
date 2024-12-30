@@ -1,5 +1,7 @@
 # Conversor de Moedas
 
+#Português (Brazil)
+
 * Um simples conversor de moedas simples com 4 cotações disponíveis.
 * Moedas: BRL (Real Brasileiro), CNY (Yuan Chinês), EUR (Euro), USD (Dólar Americano).
 
@@ -15,3 +17,28 @@
 
 3.
 ![3](https://github.com/user-attachments/assets/c84040fe-3d46-482c-8269-24c848f9d1ee)
+
+
+|===--------------------+------------------===|
+
+
+# Currency Converter
+
+#English (United States)
+
+* A simple currency converter with 4 currencies available.
+* Currencies: BRL (Brazilian Real), CNY (Chinese Yuan), EUR (Euro), USD (US Dollar).
+
+-----------------------------------------------
+
+# Images
+
+1.
+![1en](https://github.com/user-attachments/assets/ad034385-1724-4cf0-b0f7-dc7d24f88305)
+
+2.
+![2en](https://github.com/user-attachments/assets/68fc6670-0937-41b6-bd4e-de6d596a2c42)
+
+3.
+![3en](https://github.com/user-attachments/assets/ddaa9011-d0db-43eb-acd9-bf32124e69dc)
+
