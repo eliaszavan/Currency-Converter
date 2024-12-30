@@ -6,6 +6,7 @@
     <title>Conversor BRL</title>
     <link rel="stylesheet" href="css/style.css"></link>
     <link rel="icon" href="img/website_icon.png" type="image/png">
+    
 </head>
 <body>
         <div class="container">
@@ -13,17 +14,27 @@
                 <h1 class="title">Conversor</h1>
                 <form>
                     <div class="input-container">
-                        <p>Quantia R$</p>
-                        <input type="number" class="amount" placeholder="BRL">
+                        <p>Quantia</p>
+                        <input type="number" class="amount" placeholder="Insira um valor numérico">
     
-                        <p>Moeda</p>
+                        <p>De:</p>
                         <div class="div-select">
-                            <select class="currency-selector">
+                            <select class="currency-selector" id="from">
                                 <option value="USD" selected="selected">USD - Dólar Americano</option>
                                 <option value="CNY">CNY - Yuan Chinês</option>
                                 <option value="EUR">EUR - Euro</option>
+                                <option value="BRL">BRL - Real Brasileiro</option>
                              </select>
-                        </div>   
+                        </div>  
+                        <p>Para:</p>
+                        <div class="div-select">
+                            <select class="currency-selector" id="to">
+                                <option value="USD" selected="selected">USD - Dólar Americano</option>
+                                <option value="CNY">CNY - Yuan Chinês</option>
+                                <option value="EUR">EUR - Euro</option>
+                                <option value="BRL">BRL - Real Brasileiro</option>
+                             </select>
+                        </div>    
                     </div>
                     <button>Converter</button>
         
