@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<link>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Converter</title>
-    <link rel="stylesheet" href="css/style.css"></link>
-    <link rel="icon" href="img/website_icon.png" type="image/png">
-    
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Currency Converter</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/website_icon.png" type="image/png">
+    </head>
+    <body>
         <div class="container">
             <div class="container-content">
                 <h1 class="title">Converter</h1>
                 <form>
                     <div class="input-container">
-                        <p>Amount</p>
+                        <p class="amount-p">Amount</p>
                         <input type="number" inputmode="decimal" class="amount" placeholder="Enter a numeric value">
     
-                        <p>From:</p>
+                        <p class="from-p">From:</p>
                         <div class="div-select">
                             <select class="currency-selector" id="from">
                                 <option value="USD" selected="selected">USD - US Dollar</option>
@@ -26,7 +25,7 @@
                                 <option value="BRL">BRL - Brazilian Real</option>
                              </select>
                         </div>  
-                        <p>To:</p>
+                        <p class="to-p">To:</p>
                         <div class="div-select">
                             <select class="currency-selector" id="to">
                                 <option value="USD">USD - US Dollar</option>
@@ -36,13 +35,24 @@
                              </select>
                         </div>    
                     </div>
-                    <button>Convert</button>
+                    <button class="convert-button">Convert</button>
         
-                    <p class="title-result">Result</p>
+                    <p class="subtitle-result">Result</p>
                     <div class="result">0.00</div>
                 </form>
+                <!-- Language selector for mobile -->
+                <select class="language-selector" id="mobile">
+                    <option value="pt_BR">Português (Brasil)</option>
+                    <option value="en" selected="selected">English (United States)</option>
+                </select>
             </div>
         </div>
-    <script src="js/script.js" defer></script>
-</body>
+        <!-- Language selector for desktop -->
+        <select class="language-selector" id="desktop">
+            <option value="pt_BR">Português (Brasil)</option>
+            <option value="en" selected="selected">English (United States)</option>
+        </select>
+
+        <script type="module" src="js/script.js" defer></script>
+    </body>
 </html>

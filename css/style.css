@@ -18,9 +18,7 @@ body {
     background-color: var(--black);
 }
 
-h1,
-a,
-p {
+h1, a, p {
     color: var(--black);
     text-decoration: none;
 }
@@ -40,6 +38,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container {
@@ -54,8 +53,7 @@ form {
     margin-top: 16px;
 }
 
-input,
-button {
+input, .convert-button {
     width: 100%;
     border: none;
     border-radius: 8px;
@@ -69,7 +67,7 @@ input {
     margin-bottom: 20px;
 }
 
-button {
+.convert-button {
     padding: 15px;
     color: var(--white);
     background-color: var(--darkgreen2);
@@ -78,7 +76,7 @@ button {
     transition: all 0.4s;
 }
 
-button:hover {
+.convert-button:hover {
     cursor: pointer;
     background-color: var(--darkgreen);
     letter-spacing: 1.2px;
@@ -99,9 +97,7 @@ p {
 
 .div-select {
     width: 100%;
-    /* Tamanho final do select */
     overflow: hidden;
-    /* Esconde o conteúdo que passar do tamanho especificado */
 }
 
 .currency-selector {
@@ -123,11 +119,33 @@ p {
     background-color: var(--lightgray);
 }
 
+.language-selector {
+    border: none;
+    border: 1px solid var(--gray2);
+    border-radius: 8px;
+    margin-top: 24px;
+    font-size: 16px;
+    padding: 12px;
+    color: var(--black);
+    text-indent: 0.5px;
+}
+
+/* Mobile layout */
+#mobile {
+    display: none;
+}
+
+/* Desktop layout */
+#desktop {
+    display: block;
+}
+
+/* On smaller screens, show the mobile language selector */
 @media only screen and (max-width: 768px) {
     .container {
-      height: 100%;
-      width: 100%;
-      border-radius: 0px;
+        height: 100%;
+        width: 100%;
+        border-radius: 0px;
     }
 
     h1 {
@@ -135,6 +153,37 @@ p {
     }
 
     .container-content {
-        margin-top: 45%;
+        margin-top: 24%;
+    }
+
+    .language-selector {
+        margin-top: 50px;
+    }
+
+    #mobile {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
+    }
+}
+/*Garatindo que o container-content fique alinhado no centro da tela*/
+
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    .container-content {
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (min-width: 548px) and (max-width: 768px) {
+    .container-content {
+        margin-top: 16%;
+    }
+}
+
+@media only screen and (min-width: 698px) and (max-width: 768px) {
+    .container-content {
+        margin-top: 12%;
     }
 }
