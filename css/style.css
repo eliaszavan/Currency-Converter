@@ -140,7 +140,8 @@ p {
     display: block;
 }
 
-/* On smaller screens, show the mobile language selector */
+/*Garatindo que o container-content fique alinhado no centro da tela*/
+/*Escondendo language selector*/
 @media only screen and (max-width: 768px) {
     .container {
         height: 100%;
@@ -153,7 +154,7 @@ p {
     }
 
     .container-content {
-        margin-top: 24%;
+        margin-top: 6%;
     }
 
     .language-selector {
@@ -166,24 +167,5 @@ p {
 
     #desktop {
         display: none;
-    }
-}
-/*Garatindo que o container-content fique alinhado no centro da tela*/
-
-@media only screen and (min-width: 450px) and (max-width: 768px) {
-    .container-content {
-        margin-top: 20%;
-    }
-}
-
-@media only screen and (min-width: 548px) and (max-width: 768px) {
-    .container-content {
-        margin-top: 16%;
-    }
-}
-
-@media only screen and (min-width: 698px) and (max-width: 768px) {
-    .container-content {
-        margin-top: 12%;
     }
 }
