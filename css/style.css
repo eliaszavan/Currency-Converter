@@ -149,6 +149,10 @@ p {
         border-radius: 0px;
     }
 
+    body {
+        background-color: var(--white);
+    }
+
     h1 {
         text-indent: -16px;
     }
